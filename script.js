@@ -9,7 +9,7 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     var formatted = h + ":" + m + ":" + s;
-    $("#txt").text(formatted);
+    $("#clock").text(formatted);
     setTimeout(startTime, 1000);
   }
   
