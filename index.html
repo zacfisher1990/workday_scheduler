@@ -27,46 +27,23 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-     
-      
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
       <p id="clock"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      
+      <span id="nineAM" class="d-block p-2 text-white bg-primary border">9:00 AM</span>
 
-      <span class="d-block p-2 text-white bg-primary border">6:00 AM</span>
-      
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
+        <input id="9activity" type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="button">Save</button>
         </div>
       </div>
-      
-      <span class="d-block p-2 text-white bg-primary border">7:00 AM</span>
-      
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Save</button>
-        </div>
-      </div>
-      
-      
-      <span class="d-block p-2 text-white bg-primary border">8:00 AM</span>
-      
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Save</button>
-        </div>
-      </div>
-      
-      
-
-      <span class="d-block p-2 text-white bg-primary border">9:00 AM</span>
+    
+      <span id="tenAM" class="d-block p-2 text-white bg-primary border">10:00 AM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -75,8 +52,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">10:00 AM</span>
+      <span id="elevenAM" class="d-block p-2 text-white bg-primary border">11:00 AM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -85,8 +61,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">11:00 AM</span>
+      <span id="twelvePM" class="d-block p-2 text-white bg-primary border">12:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -95,8 +70,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">12:00 AM</span>
+      <span id="onePM" class="d-block p-2 text-white bg-primary border">1:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -105,8 +79,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">1:00 PM</span>
+      <span id="twoPM" class="d-block p-2 text-white bg-primary border">2:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -115,8 +88,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">2:00 PM</span>
+      <span id="threePM" class="d-block p-2 text-white bg-primary border">3:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -125,8 +97,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">3:00 PM</span>
+      <span id="fourPM" class="d-block p-2 text-white bg-primary border">4:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -135,8 +106,16 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">4:00 PM</span>
+      <span id="fivePM" class="d-block p-2 text-white bg-primary border">5:00 PM</span>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button">Save</button>
+        </div>
+      </div>
+    
+      <span id="sixPM" class="d-block p-2 text-white bg-primary border">6:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -145,8 +124,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">5:00 PM</span>
+      <span id="sevenPM" class="d-block p-2 text-white bg-primary border">7:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -155,8 +133,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">6:00 PM</span>
+      <span id="eightPM" class="d-block p-2 text-white bg-primary border">8:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -165,8 +142,7 @@
         </div>
       </div>
       
-      
-      <span class="d-block p-2 text-white bg-primary border">7:00 PM</span>
+      <span id="ninePM" class="d-block p-2 text-white bg-primary border">9:00 PM</span>
 
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
@@ -174,36 +150,6 @@
           <button class="btn btn-outline-secondary" type="button">Save</button>
         </div>
       </div>
-      
-      
-      <span class="d-block p-2 text-white bg-primary border">8:00 PM</span>
-
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Save</button>
-        </div>
-      </div>
-      
-      
-      <span class="d-block p-2 text-white bg-primary border">9:00 PM</span>
-
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="activity" aria-label="activity" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Save</button>
-        </div>
-      </div>
-      
-      
-     
-      
-
-     
-     
-
-      
-
     </div>
     <script src="script.js"></script>
 
