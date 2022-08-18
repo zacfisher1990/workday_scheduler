@@ -22,44 +22,70 @@ function startTime() {
 if (h > 9 || ampm == 'PM') {
   document.getElementById('nineAM').setAttribute('class', 'pastHour');
   document.getElementById('9activity').textContent = "past 9 am";
+  } else if (h === 9 && ampm == 'AM') {
+    document.getElementById('nineAM').setAttribute('class', 'presentHour');
   };
 if (h > 10 || ampm == 'PM') {
   document.getElementById('tenAM').setAttribute('class', 'pastHour');
+  } else if (h === 10 && ampm == 'AM') {
+    document.getElementById('tenPM').setAttribute('class', 'presentHour');
   };
 if (h > 11 || ampm == 'PM') {
   document.getElementById('elevenAM').setAttribute('class', 'pastHour');
+  } else if (h === 11 && ampm == 'AM') {
+    document.getElementById('elevenAM').setAttribute('class', 'presentHour');
   };
 if (h < 12 && ampm == 'PM') {
     document.getElementById('twelvePM').setAttribute('class', 'pastHour');
+  } else if (h === 12 && ampm == 'PM') {
+    document.getElementById('twelvePM').setAttribute('class', 'presentHour');
   };
 if (h > 1 && ampm == 'PM') {
     document.getElementById('onePM').setAttribute('class', 'pastHour');
+  } else if (h === 1 && ampm == 'PM') {
+    document.getElementById('onePM').setAttribute('class', 'presentHour');
   };
 if (h > 2 && ampm == 'PM') {
     document.getElementById('twoPM').setAttribute('class', 'pastHour');
+  } else if (h === 2 && ampm == 'PM') {
+    document.getElementById('twoPM').setAttribute('class', 'presentHour');
   };
 if (h > 3 && ampm == 'PM') {
   document.getElementById('threePM').setAttribute('class', 'pastHour');
+  } else if (h === 3 && ampm == 'PM') {
+    document.getElementById('threePM').setAttribute('class', 'presentHour');
   };  
 if (h > 4 && ampm == 'PM') {
     document.getElementById('fourPM').setAttribute('class', 'pastHour');
+  } else if (h === 4 && ampm == 'PM') {
+    document.getElementById('fourPM').setAttribute('class', 'presentHour');
   };  
 if (h > 5 && ampm == 'PM') {
     document.getElementById('fivePM').setAttribute('class', 'pastHour');
+  } else if (h === 5 && ampm == 'PM') {
+    document.getElementById('fivePM').setAttribute('class', 'presentHour');
   };  
 if (h > 6 && ampm == 'PM') {
     document.getElementById('sixPM').setAttribute('class', 'pastHour');
+  } else if (h === 6 && ampm == 'PM') {
+    document.getElementById('sixPM').setAttribute('class', 'presentHour');
   };
 if (h > 7 && ampm == 'PM') {
     document.getElementById('sevenPM').setAttribute('class', 'pastHour');
+  } else if (h === 7 && ampm == 'PM') {
+    document.getElementById('sevenPM').setAttribute('class', 'presentHour');
   };
 if (h > 8 && ampm == 'PM') {
     document.getElementById('eightPM').setAttribute('class', 'pastHour');
-  }; 
+  } else if (h === 8 && ampm == 'PM') {
+    document.getElementById('eightPM').setAttribute('class', 'presentHour');
+  };
 if (h > 9 && ampm == 'PM') {
     document.getElementById('ninePM').setAttribute('class', 'pastHour');
+  } else if (h === 9 && ampm == 'PM') {
+    document.getElementById('ninePM').setAttribute('class', 'presentHour');
   };   
-  
+
 
   }
   

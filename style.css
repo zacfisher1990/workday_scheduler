@@ -72,4 +72,11 @@ textarea {
 
 .pastHour {
   background-color: gray;
+  color: white;
+}
+
+.presentHour {
+  background-color: red;
+  font-weight: bolder;
+  color: white;
 }
